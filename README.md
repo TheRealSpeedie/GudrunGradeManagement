@@ -1,4 +1,5 @@
 # NOT FINISHED YET PROBABLY WILL NEVER BE FINISHED
+Gudrun is here to make life easier!
 
 Welcome to GudrunDieSiebte, a website developed by @TheRealSpeedie. Gudrun is designed to provide schools and universities with an efficient and user-friendly management system. Feel free to explore the sections below to learn more about Gudrun and its features.
 
@@ -15,7 +16,8 @@ Welcome to GudrunDieSiebte, a website developed by @TheRealSpeedie. Gudrun is de
 
 # Use of Gudrun
 
-Gudrun is designed exclusively for use in schools and universities. It is an open-source and free alternative for institutions that are dissatisfied with state-provided programs. Gudrun aims to be accessible and easy to use for everyone involved.
+This is how Gudrun looks like
+!Important: Names and everything else is random generated and some words are in german!
 
 ## Use for Students
 
