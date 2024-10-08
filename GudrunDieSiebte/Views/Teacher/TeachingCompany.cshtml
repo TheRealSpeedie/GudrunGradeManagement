@@ -1,0 +1,23 @@
+﻿@model IEnumerable<GudrunDieSiebte.Models.Student>
+
+@{
+    ViewData["Title"] = "Lehrbetrieb";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="tablediv">
+<table class="table table-hover">
+    <thead class="text-light bg-dark">
+        <td>Schüler</td>
+        <td>Klasse</td>
+        <td>Name</td>
+        <td>Adresse</td>
+        <td>Stadt</td>
+    </thead>
+        <tbody id="teachingCompanyList" class="text-light">
+    </tbody>
+</table>
+</div>
+<button class="btn btn-secondary" onclick="GetTeachingCompanyWithStudents()">Lehrbetriebe neuladen</button>
+
+

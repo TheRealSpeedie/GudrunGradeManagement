@@ -1,0 +1,71 @@
+﻿@page
+@using Microsoft.AspNetCore.Http.Features
+@model TwoFactorAuthenticationModel
+@{
+    ViewData["Title"] = "Zwei-Faktor Authetifizierung (2FA)";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+<h3>@ViewData["Title"]</h3>
+@{
+    var consentFeature = HttpContext.Features.Get<ITrackingConsentFeature>();
+    @if (consentFeature?.CanTrack ?? true)
+    {
+        @if (Model.Is2faEnabled)
+        {
+            if (Model.RecoveryCodesLeft == 0)
+            {
+                <div class="alert alert-danger">
+                    <strong>Sie haben keine zurücksetzung Codes mehr</strong>
+                    <p>Sie müssen zuerst <a asp-page="./GenerateRecoveryCodes">einen zurücksetzungs Code generieren</a> bevor du dich mit einem zurücksetzungs Code einloggst</p>
+                </div>
+            }
+            else if (Model.RecoveryCodesLeft == 1)
+            {
+                <div class="alert alert-danger">
+                    <strong>Nur noch 1 zurücksetzungs Code verfügbar</strong>
+                    <p>Sie können <a asp-page="./GenerateRecoveryCodes">einen neuen Satz zurücksetzungs Codes generieren</a>.</p>
+                </div>
+            }
+            else if (Model.RecoveryCodesLeft <= 3)
+            {
+                <div class="alert alert-warning">
+                    <strong>Sie haben noch @Model.RecoveryCodesLeft zurücksetzung Codes übrig</strong>
+                    <p>Sie sollten <a asp-page="./GenerateRecoveryCodes">einen zurücksetzungs Code generieren</a>.</p>
+                </div>
+            }
+
+            if (Model.IsMachineRemembered)
+            {
+                <form method="post" style="display: inline-block">
+                    <button type="submit" class="btn btn-dark">Diesen Browser vergssen</button>
+                </form>
+            }
+            <a asp-page="./Disable2fa" class="btn btn-dark">Disable 2FA</a>
+            <a asp-page="./GenerateRecoveryCodes" class="btn btn-dark">Zurücksetzen der zurücksetzungs Codes</a>
+        }
+
+        <h4 class="mb-3">Authenticator App Status:</h4>
+        @if (!Model.HasAuthenticator)
+        {
+            <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="btn btn-dark">Hinzufügen einer Autheticator app</a>
+        }
+        else
+        {
+            <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="btn btn-dark">Installieren einer Autheticator app</a>
+            <a id="reset-authenticator" asp-page="./ResetAuthenticator" class="btn btn-dark">Zurücksetzen der Authenticator app</a>
+        }
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            <strong>Datenschutzbestimmungen und Cookies müssen Akzeptiert werden</strong>
+            <p>Sie müssen zuerst die Datenschutzbestimmungen akzeptieren bevor Sie eine Autheticator App hinzufügen können.</p>
+        </div>
+    }
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

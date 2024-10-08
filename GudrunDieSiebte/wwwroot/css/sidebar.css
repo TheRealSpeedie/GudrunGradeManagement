@@ -1,0 +1,106 @@
+﻿.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 600px;
+    overflow: auto;
+}
+
+    .sidebar a {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 600px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidebar a {
+            float: left;
+        }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .tree ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+.tree-node {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+
+.transparent{
+    border-color: transparent !important;
+}
+.tree-node-label {
+    display: inline-block;
+}
+
+.tree-node-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tree-node-collapsed > .tree-node-icon {
+    transform: rotate(-90deg);
+}
+
+.tree-node-collapsed > ul {
+    display: none;
+}
+
+.tree-node-expanded > ul {
+    display: block;
+}
+
+.tree li.tree-node-expanded .tree-node .tree-node-icon {
+    transform: rotate(-90deg);
+}

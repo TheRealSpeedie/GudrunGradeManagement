@@ -1,0 +1,23 @@
+﻿@model IEnumerable<GudrunDieSiebte.Models.Student>
+
+@{
+    ViewData["Title"] = "Admin - Lehrbetriebe";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="tablediv">
+<table class="table table-hover">
+    <thead class="text-light bg-dark">
+        <td>Name <a href="#" onclick="sortTable('name', true)" style="color: white"><i class="las la-sort-alpha-down"></i></a></td>
+        <td>Adresse <a href="#" onclick="sortTable('address', true)" style="color: white"><i class="las la-sort-alpha-down"></i></a></td>
+        <td>Stadt <a href="#" onclick="sortTable('city', true)" style="color: white"><i class="las la-sort-alpha-down"></i></a></td>
+        <td>CRUD</td>
+    </thead>
+        <tbody id="teachingCompanyList" class="text-light">
+    </tbody>
+</table>
+</div>
+<button class="btn btn-secondary marginTop" onclick="getTeachingCompany(updateAdminTeachingCompanyTable)">Lehrbetriebe neuladen</button>
+<button class="btn btn-secondary marginTop" onclick="addTeachingComany()">Lehrbetrieb erstellen</button>
+
+

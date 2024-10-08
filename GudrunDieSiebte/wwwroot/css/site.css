@@ -1,0 +1,258 @@
+* {
+    --babyblue: rgb(214, 221, 224);
+    --blue: rgb(68, 111, 160);
+    --navyBlue: rgb(34, 60, 96);
+    --grey: rgb(81, 85, 91);
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+nav, footer {
+    background-color: var(--navyBlue);
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url("../Pictures/cool.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--blue);
+}
+.toast, .toast-header{
+    background-color: var(--babyblue) ;
+}
+.modal-content{
+    background-color: var(--blue);
+}
+.modal-header, .modal-footer{
+    background-color: var(--navyBlue);
+}
+nav.navbar div div{
+    width: 20%
+}
+.z-index-toast{
+    z-index: 1000;
+}
+.icon{
+    font-size: 28px;
+}
+div#notifications a.list-group-item{
+    margin-bottom: 5px;
+}
+div.toast-header div div{
+    display: inline;
+}
+main {
+    margin-top: 80px;
+}
+.text-center img{
+    width:50%;
+}
+.tablediv {
+    overflow-y: auto;
+    max-height: 600px;
+}
+#allModuls {
+    max-height: 600px;
+}
+thead {
+    position: sticky;
+    top: 0;
+}
+.list-group-item+.list-group-item{
+    border-top-width: 1px;
+}
+.nav-link.active{
+    background-color: black !important;
+}
+.container .row #contact{
+    padding-left: 0px !important; 
+}
+.container .row #iconholder img {
+    width: 30%;
+    margin-top: 5%;
+    float: right;
+}
+.container .row #iconholder #contactText p {
+    margin-right: 40%;
+    margin-top: 10%;
+    text-align: right;
+}
+.text-center img {
+    border-radius: 50px;
+}
+#teachingCompanyList td a i{
+    color: white;
+}
+#teacherlist td a i {
+    color: white;
+}
+.marginTop{
+    margin-top: 10px;
+}
+.modal-footer a {
+    color: black;
+    text-decoration: none;
+}
+.save {
+    background-color: lightgreen;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left:20px;
+}
+.cancel{
+    background-color: lightcoral;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 26%;
+
+}
+.input-group span{
+    width: 90px;
+}
+footer div div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    display: inline-block;
+}
+.one{
+    background-color: var(--babyblue);
+}
+.two {
+    background-color: var(--blue);
+}
+.three {
+    background-color: var(--navyBlue);
+}
+.four {
+    background-color: var(--grey);
+}
+
+#calendar {
+}
+#calendar a{
+    color: var(--babyblue);
+}
+#calendar button{
+    background-color: var(--blue);
+}
+.fc-day-today{
+    background-color: var(--blue) !important;
+}
+.fc-theme-standard .fc-popover{
+    background-color: var(--grey) !important;
+}
+.fc-theme-standard .fc-list-day-cushion{
+    background-color: var(--grey) !important;
+}
+.fc-button-active{
+    background-color: var(--grey) !important;
+    border: 1px solid var(--grey) !important;
+}
+button:hover {
+    border: 1px solid var(--babyblue) !important;
+}
+.fc .fc-list-event:hover td {
+    background-color: var(--blue) !important;
+}
+.fc-event-main {
+    background-color: var(--grey) !important;
+}
+#module{
+    margin-bottom: 10px;
+}
+.modullist {
+    margin-bottom: 20px;
+}
+.linkWithout{
+    text-decoration:none;
+    color: white;
+}
+.linkWithout:hover{
+    color: var(--navyBlue);
+}
+tr:hover{
+    background-color: var(--blue) !important;
+}
+table tr td.red{
+    color: red;
+}
+li a.changeColor{
+    color: var(--blue);
+}
+li a.changeColor:hover{
+    color: var(--navyBlue);
+}
+.inOneLine {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.WriteOneLine {
+    white-space: nowrap;
+}
+.nav-link{
+    color: white;
+}
+.nav .nav-item .nav-link:hover{
+    background-color: var(--babyblue);
+    color: var(--blue);
+}
+.nav-item .nav-link.active{
+    background-color: var(--navyBlue) !important;
+    color: var(--babyblue);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+}
+
+#toastPlacement_bottomRight{
+    max-height: 300px;
+}
+.modullink {
+    text-decoration: none;
+    color: black;
+}
+.modullink:hover {
+    color: var(--babyblue);
+}
+.colorRed{
+    color: red !important;
+}
+.platzhalter{
+    width: 30px;
+    display: inline-block;
+}
+.higlight{
+    display: inline;
+    color: deepskyblue !important;
+}
+.NotDone {
+    color: red;
+}
+.Done{
+    color: green;
+}

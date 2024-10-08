@@ -1,0 +1,54 @@
+﻿@model IEnumerable<GudrunDieSiebte.Models.Student>
+
+@{
+    ViewData["Title"] = "Kontaktieren Sie uns!";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-8" id="contact">
+                <div class="mb-3" >
+                    <label for="exampleInputName1" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="exampleInputName1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+            </div>
+            <div class="col-md-4" id="iconholder">
+                <div>
+                <img src="~/Pictures/icon.png">
+                </div>
+                <div id="contactText">
+                    <p>Gudrun die Einzig Wahre <br />
+                        Leichtersstr. 47 <br />
+                        9876 Nörgelschen <br />
+                        071 546 89 28
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+  
+  <div class="mb-3">
+        <label for="exampleInputTheme1" class="form-label">Thema:</label>
+        <input type="text" class="form-control" id="exampleInputTheme1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputMessage1" class="form-label">Nachricht:</label>
+        <div class="form-floating">
+            <textarea class="form-control text-dark" id="floatingTextarea2" style="height: 100px"></textarea>
+        </div>
+    </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Ich akzeptiere die <a class="text-light" href="https://localhost:7138/Home/Privacy">Datenschutzbestimmungen</a></label>
+  </div>
+    <button type="submit" class="btn btn-secondary">Senden</button>
+</form>
+

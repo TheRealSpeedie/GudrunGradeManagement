@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Lehrbetriebe";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="tablediv">
+<table class="table table-hover">
+    <thead class="text-light bg-dark">
+        <td>Name <a href="#" onclick="sortTable('name')"  style="color: white"><i class="las la-sort-alpha-down"></i></a></td>
+        <td>Adresse <a href="#" onclick="sortTable('address')" style="color: white"><i class="las la-sort-alpha-down"></i></a></td>
+        <td>Stadt <a href="#" onclick="sortTable('city')" style="color: white"><i class="las la-sort-alpha-down"></i></a></td>
+    </thead>
+        <tbody id="teachingCompanyList" class="text-light">
+    </tbody>
+</table>
+</div>
+
+
+
+
+

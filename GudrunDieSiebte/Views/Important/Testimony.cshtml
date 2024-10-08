@@ -1,0 +1,31 @@
+﻿@model IEnumerable<GudrunDieSiebte.Models.Student>
+
+@{
+    ViewData["Title"] = "Zeugnis";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="tablediv">
+    <table class="table table-hover">
+        <thead class="text-light bg-dark">
+        <td>Modul</td>
+        <td>Note</td>
+        <td>Durchschnitt</td>
+        </thead>
+        <tbody id="gradelist" class="text-light">
+        </tbody>
+    </table>
+</div>
+<div class="btn-group" role="group" aria-label="Basic example">
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Download
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#" onclick="getPDFTestimony()">PDF</a></li>
+            <li><a class="dropdown-item" href="#" onclick="getCSVTestimony()">CSV</a></li>
+  </ul>
+</div>
+</div>
+
+

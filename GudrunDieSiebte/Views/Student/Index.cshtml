@@ -1,0 +1,19 @@
+﻿@model IEnumerable<GudrunDieSiebte.Models.Student>
+
+@{
+    ViewData["Title"] = "Mitschüler";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="tablediv">
+    <table class="table table-hover">
+        <thead class="text-light bg-dark">
+        <td>Klasse</td>
+        <td>Vorname</td>
+        <td>Nachname</td>
+    </thead>
+        <tbody id="studentlist" class="text-light">
+    </tbody>
+</table>
+</div>
+
