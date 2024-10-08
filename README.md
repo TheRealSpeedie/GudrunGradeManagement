@@ -18,6 +18,8 @@ Welcome to GudrunDieSiebte, a website developed by @TheRealSpeedie. Gudrun is de
 
 This is how Gudrun looks like
 !Important: Names and everything else is random generated and some words are in german!
+![A closer look in Gudruns Design]([URL-zum-GIF](https://github.com/TheRealSpeedie/Notenverwaltungssystem/blob/main/Pictures/gudrun.gif))
+
 
 ## Use for Students
 
