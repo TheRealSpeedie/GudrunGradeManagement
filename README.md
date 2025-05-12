@@ -1,105 +1,92 @@
-# 🎓 GudrunDieSiebte 📚  
-**Effortless School & University Management**  
+# 🎓 GudrunDieSiebte – Simplified School & University Management
 
-🚧 **Note:** This project is **not finished** and may never be completed.  
+**GudrunDieSiebte** is a concept for a smart and user-friendly platform that connects students, teachers, and administrators for seamless academic management.
 
-Gudrun is designed to **simplify school and university management** by providing an efficient and user-friendly platform for **students, teachers, and administrators**.  
-
----
-
-## 📖 Table of Contents  
-
-- [🎓 GudrunDieSiebte 📚](#-gudrundiesiebte-)
-- [🔍 Use of Gudrun](#-use-of-gudrun-)
-  - [👨‍🎓 Use for Students](#-use-for-students-)
-  - [👩‍🏫 Use for Teachers](#-use-for-teachers-)
-  - [🏫 Use for School Management and Admins](#-use-for-school-management-and-admins-)
-- [⚙️ Installation](#️-installation-)
-- [🔐 Security](#-security-)
-- [🗃️ Database Structure](#-database-structure-)
+> ⚠️ **Note:** This project is currently unfinished and may not be developed further.
 
 ---
 
-## 🔍 Use of Gudrun  
+## 📌 Overview
 
-Gudrun is designed to be a **complete school management system**.  
-📌 **Important:** Names and some text elements are **randomly generated** and may appear in **German**.  
-
-### 👨‍🎓 Use for Students  
-
-Students have access to a **dedicated portal** where they can:  
-
-✅ **View their grades** – The grading system works as follows:  
-   - 1 = -6  
-   - 2 = -4  
-   - 3 = -2  
-   - 4 = 0  
-   - 5 = +1  
-   - 6 = +2  
-
-   *(Grades below the threshold are highlighted in red for clarity.)*  
-
-✅ **Check their timetable** – Displays lessons, appointments, absences, and exams.  
-✅ **Download report cards** – Always up-to-date and available for export.  
-
-![A closer Look at Gudrun](https://github.com/TheRealSpeedie/Notenverwaltungssystem/blob/main/Pictures/gudrun.gif)  
+- Centralized management of grades, absences, and users
+- Separate portals for students, teachers, and admins
+- Focused on clarity, simplicity, and essential tools
 
 ---
 
-### 👩‍🏫 Use for Teachers  
+## 👨‍🎓 Student Portal
 
-Gudrun makes **class management simple** with:  
+Students benefit from:
 
-✔️ **Absence Management** – Three customized views:  
-   1. **Displayed Absences** – Only selected absences.  
-   2. **Undisplayed Absences** – Hidden absences.  
-   3. **All Absences** – Full history with the option to restore hidden records.  
+- 📊 **Grade overview** using a custom point scale:
+  - 1 = -6 | 2 = -4 | 3 = -2 | 4 = 0 | 5 = +1 | 6 = +2
+- 📅 **Timetable** with classes, exams, and absences
+- 📄 **Downloadable report cards** – always up to date
 
-✔️ **Grade Management** – A user-friendly system for quick and easy grading.  
-
----
-
-### 🏫 Use for School Management and Admins  
-
-The **admin panel** provides full control over:  
-
-✅ **User Management** – Quickly create student and teacher accounts.  
-✅ **Teacher Absences** – A clear and detailed overview of missing personnel.  
+![Gudrun in action](https://github.com/TheRealSpeedie/Notenverwaltungssystem/blob/main/Pictures/gudrun.gif)
 
 ---
 
-## ⚙️ Installation  
+## 👩‍🏫 Teacher Portal
 
-Just build an Realese build in Visual Studio and the Software is ready to use.
+Tools to simplify teaching tasks:
 
----
-
-## 🔐 Security  
-
-Security is a **top priority**. All necessary measures have been taken to **protect user data**, but we **do not accept any liability**.  
-
----
-
-## 🗃️ Database Structure  
-
-The following **Entity-Relationship Diagrams (ERD)** illustrate the database design:  
-
-![ERD Diagram 1](Pictures/ERD1.png)  
-![ERD Diagram 2](Pictures/ERD2.png)  
+- 📝 **Absence management** with 3 views:
+  1. Only visible absences  
+  2. Hidden absences  
+  3. All absences with restore option
+- 🧮 **Grade entry** with a fast and intuitive interface
 
 ---
 
-## 📌 Future Improvements  
+## 🏫 Admin Panel
 
-- [ ] **Complete development** of missing features.  
-- [ ] **Multi-language support** (English, German, etc.).  
-- [ ] **User roles & permissions** improvements.  
-- [ ] **Enhanced security measures**.  
+Admins have full control over:
 
-## 🤝 Contributing  
+- 👥 **User management** – create and edit accounts
+- 🧑‍🏫 **Teacher absences** – view and manage staff availability
 
-Feel free to contribute! Fork the repo, submit an issue, or create a pull request.  
+---
 
-## 📜 License  
+## ⚙️ Installation
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.  
+Simply build a **Release version** using Visual Studio – no further setup required.
+
+---
+
+## 🔐 Security
+
+Security is important to us. All necessary measures have been taken to protect user data,  
+but we assume **no liability** for any data loss or misuse.
+
+---
+
+## 🗃️ Database Design
+
+The core structure is shown in these Entity Relationship Diagrams:
+
+![ERD 1](Pictures/ERD1.png)  
+![ERD 2](Pictures/ERD2.png)
+
+---
+
+## 🚀 Planned Improvements
+
+- [ ] Finish development of remaining modules
+- [ ] Add multi-language support (EN, DE, ...)
+- [ ] Expand user roles and permissions
+- [ ] Enhance security features
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to fork the repo, submit issues, or open a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more details.
