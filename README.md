@@ -4,7 +4,6 @@
 
 > ⚠️ **Note:** This project is currently unfinished and may not be developed further.
 
----
 
 ## 📌 Overview
 
@@ -12,7 +11,6 @@
 - Separate portals for students, teachers, and admins
 - Focused on clarity, simplicity, and essential tools
 
----
 
 ## 👨‍🎓 Student Portal
 
@@ -25,7 +23,6 @@ Students benefit from:
 
 ![Gudrun in action](https://github.com/TheRealSpeedie/Notenverwaltungssystem/blob/main/Pictures/gudrun.gif)
 
----
 
 ## 👩‍🏫 Teacher Portal
 
@@ -37,7 +34,6 @@ Tools to simplify teaching tasks:
   3. All absences with restore option
 - 🧮 **Grade entry** with a fast and intuitive interface
 
----
 
 ## 🏫 Admin Panel
 
@@ -46,20 +42,19 @@ Admins have full control over:
 - 👥 **User management** – create and edit accounts
 - 🧑‍🏫 **Teacher absences** – view and manage staff availability
 
----
 
 ## ⚙️ Installation
 
 Simply build a **Release version** using Visual Studio – no further setup required.
 
----
+
 
 ## 🔐 Security
 
 Security is important to us. All necessary measures have been taken to protect user data,  
 but we assume **no liability** for any data loss or misuse.
 
----
+
 
 ## 🗃️ Database Design
 
@@ -68,7 +63,7 @@ The core structure is shown in these Entity Relationship Diagrams:
 ![ERD 1](Pictures/ERD1.png)  
 ![ERD 2](Pictures/ERD2.png)
 
----
+
 
 ## 🚀 Planned Improvements
 
@@ -77,14 +72,14 @@ The core structure is shown in these Entity Relationship Diagrams:
 - [ ] Expand user roles and permissions
 - [ ] Enhance security features
 
----
+
 
 ## 🤝 Contributing
 
 Contributions are welcome!  
 Feel free to fork the repo, submit issues, or open a pull request.
 
----
+
 
 ## 📄 License
 
